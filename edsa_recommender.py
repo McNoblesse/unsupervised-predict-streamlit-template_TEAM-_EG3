@@ -56,61 +56,101 @@ def main():
         st.sidebar.markdown("Home Page 🏡")
         #st.image('GreenRising.jpg', width= 250)
 
-        tab1, tab2, tab3, tab4 = st.tabs(["Home Page 🏡", "About Us 🎈", "EDA Process🚧", "Feedback 💌"])
-
-        #tab1.link_button("Test Model", "http://localhost")
-
-        #tab2.link_button("Test Model", "http://localhost:8501/About_Us")
-
-        #tab3.link_button("Test Model", "http://localhost:8501/EDA_Process")
-
-        #tab4.link_button("Test Model", "http://localhost:8501/Feedback")
-
-        st.header("Welcome to DataEra, where data meets insight.!")
-        st.write("Discover the power of data analytics and machine learning")
-        st.divider()
-        st.subheader("Our Mission:")
-        st.write("Our mission is to catalyze positive environmental change by fostering awareness, implementing eco-friendly solutions, and advocating for policies that mitigate climate change's impact. Through collaborative efforts, we strive to build resilient  communities that actively contribute to the well-being of the Earth, ensuring a legacy of sustainability \for generations to come.")
-        st.write("➡Empowering businesses through data-driven decision-making.")
-        st.write("➡Transforming raw data into actionable insights.")
-
-        st.subheader("Our Vision:")
-        st.write("Empowering communities for a sustainable future, where the delicate balance of our planet \is respected, and all individuals thrive in harmony with nature.")
-
-        st.header("Key Features:")
-        st.write("➡Advanced Data Analytics: Uncover hidden patterns and trends.")
-        st.write("➡Machine Learning Models: Predictive modeling for informed decisions.")
-        st.write("➡Insightful Visualizations: Communicate complex data in a clear manner.")
+        st.header("Welcome to QuantumInsights, Your Gateway to Innovative Data Solutions!")
+        st.write("🚀 Empowering Businesses with Data Excellence")
+        st.write("")
+        st.write("At QuantumInsights, we harness the power of data to drive transformative insights and solutions. \
+        As a leading data science firm, we specialize in delivering cutting-edge services that propel businesses \
+        to new heights. Explore our homepage to discover how we can unlock the full potential of your data.")
 
         st.divider()
-        col1, col2 = st.columns(2)
+        st.write("### Our Services")
+        st.write("##### Data Analytics and Visualization")
+        st.write("➡ Transform raw data into actionable insights. Our expert analysts leverage advanced tools \
+        and techniques to uncover trends, patterns, and key metrics that drive informed decision-making.")
+        st.write("##### Machine Learning Solutions")
+        st.write("➡ Embrace the future with our machine learning expertise. From predictive modeling to natural \
+        language processing, our team crafts intelligent solutions that adapt to your evolving business needs.")
+        st.write("##### Big Data Management")
+        st.write("➡ Efficiently manage and analyze vast datasets. Our big data solutions ensure seamless processing, \
+        storage, and retrieval of information, enabling you to make data-driven decisions at scale.")
+        st.write("##### AI-powered Applications")
+        st.write("➡ Experience the power of artificial intelligence. We design and develop intelligent applications \
+        that enhance user experiences, automate processes, and deliver tangible business outcomes.")
 
-        with col1:
-            st.subheader("Explore our EDA Report for in-depth insights.")
-            #st.link_button("EXPLORE EDA", "http://localhost:8501/EDA_Process")
-            st.markdown("<a href='http://localhost:8501/EDA_Process'><button>EXPLORE EDA</button></a>", unsafe_allow_html=True)
+        st.divider()
+        st.write("### Why Choose QuantumInsights?")
+        st.write("➡ Expert Team: Our team of seasoned data scientists, engineers, and analysts bring a wealth of \
+        expertise to every project.")
+        st.write("➡ Innovation: Stay ahead in the dynamic world of data science with our commitment to continuous \
+        innovation and exploration of emerging technologies.")
+        st.write("➡ Tailored Solutions: We understand that every business is unique. Our solutions are customized \
+        to meet your specific challenges and goals.")
+        st.write("➡ Proven Results: Discover success stories from businesses that have unlocked value through our \
+        data science solutions..")
 
-        with col2:
-            st.subheader("See the performance of our models on the Model Test page.")
-            #st.link_button("Test Model", "http://localhost:8501/Test_model")
-            st.markdown("<a href='http://localhost:8501/Test_model'><button>Test Model</button></a>", unsafe_allow_html=True)
+        st.divider()
+        st.write("### Let's Transform Your Data Journey")
+        st.write("Whether you're looking to enhance analytics capabilities, implement machine learning solutions, \
+        or navigate the world of big data, QuantumInsights is your trusted partner. Let's embark on a journey to turn \
+        your data into a strategic asset.")
+
+        st.write("##### 📈 Unlock the Power of Your Data with QuantumInsights - Where Innovation Meets Insight! 🌐")
 
 
     if page_selection == "About Us":
         #st.image('GreenRising.jpg', width= 150)
-        st.header("About Us 🎈")
+        st.title("About Us 🎈")
         st.sidebar.markdown("About Us🎈")
-        st.divider()
-        st.subheader("Company Overview:")
-        st.write("Founded in 2017, GreenRising is an NGO that seeks to educate corporate entities and individuals on the importance of climate change, sustainable development and responsible custodianship of our planet and it's resources")
-        st.header("")
-
-        st.caption("What Sets Us Apart:")
-        st.write("➡Expertise in advanced data analytics and machine learning")
-        st.write("➡Committed to delivering high-quality, impactful results")
 
         st.divider()
-        st.subheader("Meet Our Team:")
+        st.write("### Company Overview")
+        st.write("Welcome to QuantumInsights – Where Data Unveils Infinite Possibilities!")
+        st.write("Founded in 2002 with a Global socio-economic perspective, tailored for the unique needs of clients \
+        and for dynamic hub of innovation, education, and entrepreneurship.  At QuantumInsights, we believe in the \
+        transformative power of data. Our journey began with a vision \
+        to redefine the landscape of data science, turning complex datasets into strategic assets for businesses across \
+        diverse industries.")
+
+        st.divider()
+        st.write("### Our Mission")
+        st.write("##### 🚀 Empowering Businesses through Data Excellence")
+        st.write("Our mission is to empower organizations with innovative data solutions, enabling them to navigate \
+        the digital era with confidence. We are dedicated to delivering cutting-edge data science services that drive \
+        informed decision-making, fuel innovation, and foster sustainable growth.")
+
+        st.divider()
+        st.write("### What Sets Us Apart")
+        st.write("##### 🌐 Innovation at the Core")
+        st.write("At Quantum Insights Labs, innovation is not just a buzzword – it's our guiding principle. Our team \
+        of seasoned data scientists, engineers, and analysts thrives on pushing the boundaries of what's possible. \
+        We continuously explore emerging technologies, ensuring our clients stay ahead in the dynamic world of data science.")
+        st.write("##### 🤝 Tailored Solutions for Your Success")
+        st.write("We understand that each business is unique, facing its own challenges and opportunities. That's why we \
+        don't believe in one-size-fits-all solutions. Our approach is collaborative, and our solutions are meticulously \
+        tailored to meet the specific needs and goals of our clients.")
+        st.write("##### 💡 Proven Expertise")
+        st.write("Our journey is marked by a track record of success. From data analytics and machine learning to big data \
+        management, we bring a wealth of expertise to every project. Explore our success stories and discover how businesses \
+        have unlocked value through our data science solutions.")
+
+        st.divider()
+        st.write("### Our Commitment")
+        st.write("##### ✨ Excellence, Integrity, Innovation")
+        st.write("➡ EExcellence: We are committed to delivering solutions of the highest quality, exceeding our clients' expectations.")
+        st.write("➡ Integrity: We operate with transparency, honesty, and the utmost respect for our clients, partners, and team members.")
+        st.write("➡ Innovation: We thrive on continuous innovation, staying at the forefront of technological advancements to bring fresh \
+        perspectives to every project.")
+
+        st.divider()
+        st.write("### Let's Shape the Future of Data Together")
+        st.write("Whether you are looking to elevate your data analytics, implement machine learning solutions, or navigate the vast world \
+        of big data, QuantumInsights is your dedicated partner. Join us on a journey where data becomes a catalyst for growth and transformation.")
+
+        st.write("##### 🚀 Explore Infinite Possibilities with QuantumInsights! 🌐")
+
+        st.divider()
+        st.write("## Meet Our Team:")
 
         #with st.container():
             #col1, col2, col3 = st.columns(3)
@@ -129,7 +169,6 @@ def main():
                 #st.image('Bakwe.jpg', width= 200)
                 #st.subheader("Bakwe Chokoe")
                 #st.caption("Project Manager")
-        st.write("")
         st.write("")
         st.write("")
        # with st.container():
@@ -154,6 +193,9 @@ def main():
 
 
     if page_selection == "Recommender System":
+        #st.markdown("# GreenRising 🎈")
+        st.sidebar.markdown("Recommender System")
+        #st.image('GreenRising.jpg', width= 250)
         # Header contents
         st.write('# Movie Recommender Engine')
         st.write('### EXPLORE Data Science Academy Unsupervised Predict')
@@ -203,7 +245,10 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
-        st.title("Solution Overview")
+        #st.markdown("# GreenRising 🎈")
+        st.title("Solution Overview 🚧")
+        st.sidebar.markdown("Solution Overview 🚧")
+        #st.image('GreenRising.jpg', width= 250)
         st.write("Describe your winning approach on this page")
 
     # You may want to add more sections here for aspects such as an EDA,
@@ -213,7 +258,7 @@ def main():
     if page_selection == "Feedback":
 
         #st.image('GreenRising.jpg', width= 150)
-        st.header("Feedback 💌")
+        st.title("Feedback 💌")
         st.sidebar.markdown("Feedback 💌")
 
         st.subheader("We would like to here your review about the prediction of our model")
