@@ -52,9 +52,8 @@ def main():
     # -------------------------------------------------------------------
     page_selection = st.sidebar.selectbox("Choose Option", page_options)
     if page_selection == "Home":
-        #st.markdown("# GreenRising 🎈")
         st.sidebar.markdown("Home Page 🏡")
-        #st.image('GreenRising.jpg', width= 250)
+        st.image('resources/imgs/QuantumInsights.png', width= 170)   
 
         st.header("Welcome to QuantumInsights, Your Gateway to Innovative Data Solutions!")
         st.write("🚀 Empowering Businesses with Data Excellence")
@@ -65,29 +64,91 @@ def main():
 
         st.divider()
         st.write("### Our Services")
-        st.write("##### Data Analytics and Visualization")
-        st.write("➡ Transform raw data into actionable insights. Our expert analysts leverage advanced tools \
-        and techniques to uncover trends, patterns, and key metrics that drive informed decision-making.")
-        st.write("##### Machine Learning Solutions")
-        st.write("➡ Embrace the future with our machine learning expertise. From predictive modeling to natural \
-        language processing, our team crafts intelligent solutions that adapt to your evolving business needs.")
-        st.write("##### Big Data Management")
-        st.write("➡ Efficiently manage and analyze vast datasets. Our big data solutions ensure seamless processing, \
-        storage, and retrieval of information, enabling you to make data-driven decisions at scale.")
-        st.write("##### AI-powered Applications")
-        st.write("➡ Experience the power of artificial intelligence. We design and develop intelligent applications \
-        that enhance user experiences, automate processes, and deliver tangible business outcomes.")
+        col1, col2 = st.columns(2)
 
+        with col1:
+            st.write("##### Data Analytics and Visualization")
+            st.write("➡ Transform raw data into actionable insights. Our expert analysts leverage advanced tools \
+            and techniques to uncover trends, patterns, and key metrics that drive informed decision-making.")
+
+        with col2:
+            st.write(" ")
+            st.write(" ")
+            st.image('resources/imgs/QuantumInsights.png', width= 300)
+
+        col3, col4 = st.columns(2)
+
+        with col3:
+            st.write("##### Machine Learning Solutions")
+            st.write("➡ Embrace the future with our machine learning expertise. From predictive modeling to natural \
+            language processing, our team crafts intelligent solutions that adapt to your evolving business needs.")
+
+        with col4:
+            st.write(" ")
+            st.write(" ")
+            st.image('resources/imgs/QuantumInsights.png', width= 300)
+       
+        col5, col6 = st.columns(2)
+
+        with col5:
+            st.write("##### Big Data Management")
+            st.write("➡ Efficiently manage and analyze vast datasets. Our big data solutions ensure seamless processing, \
+            storage, and retrieval of information, enabling you to make data-driven decisions at scale.")
+
+        with col6:
+            st.write(" ")
+            st.write(" ")
+            st.image('resources/imgs/QuantumInsights.png', width= 300)
+
+        col7, col8 = st.columns(2)
+
+        with col7:
+            st.write("##### AI-powered Applications")
+            st.write("➡ Experience the power of artificial intelligence. We design and develop intelligent applications \
+            that enhance user experiences, automate processes, and deliver tangible business outcomes.")
+
+        with col8:
+            st.write(" ")
+            st.write(" ")
+            st.image('resources/imgs/QuantumInsights.png', width= 300)
+ 
         st.divider()
         st.write("### Why Choose QuantumInsights?")
-        st.write("➡ Expert Team: Our team of seasoned data scientists, engineers, and analysts bring a wealth of \
-        expertise to every project.")
-        st.write("➡ Innovation: Stay ahead in the dynamic world of data science with our commitment to continuous \
-        innovation and exploration of emerging technologies.")
-        st.write("➡ Tailored Solutions: We understand that every business is unique. Our solutions are customized \
-        to meet your specific challenges and goals.")
-        st.write("➡ Proven Results: Discover success stories from businesses that have unlocked value through our \
-        data science solutions..")
+        col9, col10 = st.columns(2)
+
+        with col9:
+            st.image('resources/imgs/QuantumInsights.png', width= 200)
+
+        with col10:
+            st.write("➡ Expert Team: Our team of seasoned data scientists, engineers, and analysts bring a wealth of \
+            expertise to every project.")
+        
+        col11, col12 = st.columns(2)
+
+        with col11:
+            st.image('resources/imgs/QuantumInsights.png', width= 200)
+
+        with col12:
+            st.write("➡ Innovation: Stay ahead in the dynamic world of data science with our commitment to continuous \
+            innovation and exploration of emerging technologies.")
+
+        col13, col14 = st.columns(2)
+
+        with col13:
+            st.image('resources/imgs/QuantumInsights.png', width= 200)
+
+        with col14:
+            st.write("➡ Tailored Solutions: We understand that every business is unique. Our solutions are customized \
+            to meet your specific challenges and goals.")
+
+        col15, col16 = st.columns(2)
+
+        with col15:
+            st.image('resources/imgs/QuantumInsights.png', width= 200)
+
+        with col16:
+            st.write("➡ Proven Results: Discover success stories from businesses that have unlocked value through our \
+            data science solutions..")
 
         st.divider()
         st.write("### Let's Transform Your Data Journey")
@@ -97,9 +158,21 @@ def main():
 
         st.write("##### 📈 Unlock the Power of Your Data with QuantumInsights - Where Innovation Meets Insight! 🌐")
 
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        col17, col18, col19 = st.columns(3)
+
+        with col17:
+            st.image('resources/imgs/QuantumInsights.png', width= 80)
+        with col18:
+            st.write("###### Quantum Insights 🏡")
+        with col19:
+            st.write("###### Copyright © 2024")
 
     if page_selection == "About Us":
-        #st.image('GreenRising.jpg', width= 150)
+        st.image('resources/imgs/QuantumInsights.png', width= 170)
         st.title("About Us 🎈")
         st.sidebar.markdown("About Us🎈")
 
@@ -152,23 +225,18 @@ def main():
         st.divider()
         st.write("## Meet Our Team:")
 
-        #with st.container():
-            #col1, col2, col3 = st.columns(3)
+        with st.container():
+            col20, col21, col22 = st.columns(3)
 
-            #with col1:
-                #st.image('Vicky.jpg', width= 200)
-                #st.subheader("Victoria Chukwuno")
-                #st.caption("Team Lead")
+            with col20:
+                st.image('resources/imgs/Ngokoana.png', width= 200)
 
-            #with col2:
-                #st.image('Lesiba.jpg', width= 200)
-                #st.subheader("Lesiba Victoria")
-                #st.caption("Data Analyst")
+            with col21:
+                st.image('resources/imgs/Nina.png', width= 150)
                     
-            #with col3:
-                #st.image('Bakwe.jpg', width= 200)
-                #st.subheader("Bakwe Chokoe")
-                #st.caption("Project Manager")
+            with col22:
+                st.image('resources/imgs/Josh.png', width= 150)
+
         st.write("")
         st.write("")
        # with st.container():
@@ -190,12 +258,24 @@ def main():
                 #st.subheader("Data Specialist")
                 #st.caption("Data Specialist")
 
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        col17, col18, col19 = st.columns(3)
+
+        with col17:
+            st.image('resources/imgs/QuantumInsights.png', width= 80)
+        with col18:
+            st.write("###### Quantum Insights 🏡")
+        with col19:
+            st.write("###### Copyright © 2024")
 
 
     if page_selection == "Recommender System":
         #st.markdown("# GreenRising 🎈")
         st.sidebar.markdown("Recommender System")
-        #st.image('GreenRising.jpg', width= 250)
+        st.image('resources/imgs/QuantumInsights.png', width= 170)
         # Header contents
         st.write('# Movie Recommender Engine')
         st.write('### EXPLORE Data Science Academy Unsupervised Predict')
@@ -240,12 +320,24 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
 
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        col17, col18, col19 = st.columns(3)
+
+        with col17:
+            st.image('resources/imgs/QuantumInsights.png', width= 80)
+        with col18:
+            st.write("###### Quantum Insights 🏡")
+        with col19:
+            st.write("###### Copyright © 2024")
 
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
-        #st.markdown("# GreenRising 🎈")
+        st.image('resources/imgs/QuantumInsights.png', width= 170)
         st.title("Solution Overview 🚧")
         st.sidebar.markdown("Solution Overview 🚧")
         #st.image('GreenRising.jpg', width= 250)
@@ -256,8 +348,7 @@ def main():
 
 
     if page_selection == "Feedback":
-
-        #st.image('GreenRising.jpg', width= 150)
+        st.image('resources/imgs/QuantumInsights.png', width= 170)
         st.title("Feedback 💌")
         st.sidebar.markdown("Feedback 💌")
 
@@ -271,6 +362,18 @@ def main():
             if submitted:
                 st.write("Thanks for your time")
 
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        col17, col18, col19 = st.columns(3)
+
+        with col17:
+            st.image('resources/imgs/QuantumInsights.png', width= 80)
+        with col18:
+            st.write("###### Quantum Insights 🏡")
+        with col19:
+            st.write("###### Copyright © 2024")
 
 if __name__ == '__main__':
     main()
