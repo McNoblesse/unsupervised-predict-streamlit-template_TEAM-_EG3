@@ -72,9 +72,7 @@ def main():
             and techniques to uncover trends, patterns, and key metrics that drive informed decision-making.")
 
         with col2:
-            st.write(" ")
-            st.write(" ")
-            st.image('resources/imgs/QuantumInsights.png', width= 300)
+            st.image('resources/imgs/Data_Analytics_and_Visuals.jpg', width= 300)
 
         col3, col4 = st.columns(2)
 
@@ -84,9 +82,7 @@ def main():
             language processing, our team crafts intelligent solutions that adapt to your evolving business needs.")
 
         with col4:
-            st.write(" ")
-            st.write(" ")
-            st.image('resources/imgs/QuantumInsights.png', width= 300)
+            st.image('resources/imgs/Machine_learning_solution.jpg', width= 300)
        
         col5, col6 = st.columns(2)
 
@@ -96,9 +92,7 @@ def main():
             storage, and retrieval of information, enabling you to make data-driven decisions at scale.")
 
         with col6:
-            st.write(" ")
-            st.write(" ")
-            st.image('resources/imgs/QuantumInsights.png', width= 300)
+            st.image('resources/imgs/big_data.jpg', width= 300)
 
         col7, col8 = st.columns(2)
 
@@ -108,16 +102,14 @@ def main():
             that enhance user experiences, automate processes, and deliver tangible business outcomes.")
 
         with col8:
-            st.write(" ")
-            st.write(" ")
-            st.image('resources/imgs/QuantumInsights.png', width= 300)
+            st.image('resources/imgs/AI_App.jpg', width= 300)
  
         st.divider()
         st.write("### Why Choose QuantumInsights?")
         col9, col10 = st.columns(2)
 
         with col9:
-            st.image('resources/imgs/QuantumInsights.png', width= 200)
+            st.image('resources/imgs/Team_expert.jpg', width= 200)
 
         with col10:
             st.write("➡ Expert Team: Our team of seasoned data scientists, engineers, and analysts bring a wealth of \
@@ -126,7 +118,7 @@ def main():
         col11, col12 = st.columns(2)
 
         with col11:
-            st.image('resources/imgs/QuantumInsights.png', width= 200)
+            st.image('resources/imgs/innovation.jpg', width= 200)
 
         with col12:
             st.write("➡ Innovation: Stay ahead in the dynamic world of data science with our commitment to continuous \
@@ -135,7 +127,7 @@ def main():
         col13, col14 = st.columns(2)
 
         with col13:
-            st.image('resources/imgs/QuantumInsights.png', width= 200)
+            st.image('resources/imgs/tailored_solution.jpg', width= 200)
 
         with col14:
             st.write("➡ Tailored Solutions: We understand that every business is unique. Our solutions are customized \
@@ -144,7 +136,7 @@ def main():
         col15, col16 = st.columns(2)
 
         with col15:
-            st.image('resources/imgs/QuantumInsights.png', width= 200)
+            st.image('resources/imgs/proven_solution.jpg', width= 200)
 
         with col16:
             st.write("➡ Proven Results: Discover success stories from businesses that have unlocked value through our \
@@ -239,24 +231,14 @@ def main():
 
         st.write("")
         st.write("")
-       # with st.container():
-            #col4, col5, col6 = st.columns(3)
+        with st.container():
+            col23, col24 = st.columns(2)
 
-           # with col4:
-                #st.image('Josh.jpg', width= 200)
-                #st.subheader("Joshua Oluwole")
-                #st.caption("Software Engineer")
+            with col23:
+                st.image('resources/imgs/Joseph.png', width= 150)
                 
-           # with col5:
+           #with col5:
                 #st.image('Fabian.png', width= 200)
-                #st.subheader("Fabian Dafat")
-                #st.caption("Data Engineer")
-
-        
-           # with col6:
-                #st.image('kemi.png', width= 200)
-                #st.subheader("Data Specialist")
-                #st.caption("Data Specialist")
 
         st.write(" ")
         st.write(" ")
@@ -345,7 +327,13 @@ def main():
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+        st.write("In the Content-Based Filtering approach, we analyze the content and features of movies, such as genres, actors, directors, and tags. By understanding the unique characteristics of each movie, we can recommend similar movies that match the user's preferences.")
+        st.write("On the other hand, the Collaborative-Based Filtering approach leverages the wisdom of the crowd. We analyze the ratings and preferences of similar users to identify movies that align with the user's tastes. This technique allows us to uncover hidden gems that might not be obvious based on content alone.")
+        st.write("By combining these two approaches, we create a hybrid recommendation system that offers the best of both worlds. This approach allows us to provide accurate recommendations that align with the user's preferences while also introducing them to new and exciting movies they might not have discovered otherwise.")
+        st.write("Furthermore, our recommendation engine continuously learns and adapts based on user feedback. As users rate and interact with movies, our system updates its recommendations to reflect their evolving preferences, ensuring that the recommendations stay relevant and personalized over time.")
+        st.write("We believe that our winning approach will transform the movie-watching experience for users, providing them with a curated list of movies that they will truly enjoy. Try our Movie Recommender Engine today and let us help you discover your next favorite movie!")
 
+        
 
     if page_selection == "Feedback":
         st.image('resources/imgs/QuantumInsights.png', width= 170)
