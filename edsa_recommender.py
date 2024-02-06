@@ -341,17 +341,17 @@ def main():
                     of rating in the train dataset. with the minum being 0.5 and the maximum being 5 and the avarage being 3.53")
         
         #Top 10 Genres
-        if eda_select == "Most Common Genres"
+        if eda_select == "Most Common Genres":
             st.image('resources/imgs/Top_genres.jpg', width= 200)
             st.write("Here we explore and built a Visual Representation of the Top Genres with the highest view by the Users, and it was noted that Drama has the highest view and ratings by the Users ")
         
         #Movie Budget
-        if eda_select == "Movie Budget"
+        if eda_select == "Movie Budget":
             st.image('resources/imgs/movie_budget.jpg', width= 200)
             st.write("Here we explore the Movies based on the budgetted fee or cost of production of the movies, in no order of year of production or Casts.")
         
         #Movie Directors
-        if eda_select == "Top Directors"
+        if eda_select == "Top Directors":
             st.image('resources/imgs/Director_chart.jpg', width= 200)
             st.write("Here we have created a Pie Chart which is showing the Distribution of the Top Rated Directors, based on User Ratings and Number of Movies Directed.")
 
