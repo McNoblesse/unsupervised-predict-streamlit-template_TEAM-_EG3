@@ -355,6 +355,10 @@ def main():
             st.image('resources/imgs/Director_chart.jpg', use_column_width= True)
             st.write("Here we have created a Pie Chart which is showing the Distribution of the Top Rated Directors, based on User Ratings and Number of Movies Directed.")
 
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
         col25, col26, col27 = st.columns(3)
 
         with col25:
