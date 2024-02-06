@@ -137,7 +137,7 @@ def collab_model(movie_list,top_n=10):
     score_series_2 = pd.Series(rank_2).sort_values(ascending = False)
     score_series_3 = pd.Series(rank_3).sort_values(ascending = False)
      # Appending the names of movies
-    listings = score_series_1.append(score_series_1).append(score_series_3).sort_values(ascending = False)
+    listings = score_series_1.append(score_series_1).append(score_series_2).append(score_series_3).sort_values(ascending = False)
     recommended_movies = []
     # Choose top 50
     top_50_indexes = list(listings.iloc[1:50].index)
@@ -145,4 +145,5 @@ def collab_model(movie_list,top_n=10):
     top_indexes = np.setdiff1d(top_50_indexes,[idx_1,idx_2,idx_3])
     for i in top_indexes[:top_n]:
         recommended_movies.append(list(movies_df['title'])[i])
+    recommended_movies = [val for sublist in recommended_movies for val in sublist]
     return recommended_movies
