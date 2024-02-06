@@ -320,17 +320,16 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
         st.image('resources/imgs/QuantumInsights.png', width= 170)
-        st.title("Solution Overview 🚧")
+        st.write("## Solution Overview 🚧")
         st.sidebar.markdown("Solution Overview 🚧")    
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
-        st.write("## Exploratory Data Analysis EDA")
         st.write("In the Content-Based Filtering approach, we analyze the content and features of movies, such as genres, actors, directors, and tags. By understanding the unique characteristics of each movie, we can recommend similar movies that match the user's preferences.")
         st.write("On the other hand, the Collaborative-Based Filtering approach leverages the wisdom of the crowd. We analyze the ratings and preferences of similar users to identify movies that align with the user's tastes. This technique allows us to uncover hidden gems that might not be obvious based on content alone.")
-        st.write("By combining these two approaches, we create a hybrid recommendation system that offers the best of both worlds. This approach allows us to provide accurate recommendations that align with the user's preferences while also introducing them to new and exciting movies they might not have discovered otherwise.")
-        st.write("It is an approach to analyzing data sets to summarize their main characteristics, often with the help of statistical graphics and other data visualization methods ")
-
+        st.write("By combining these two approaches, we create a hybrid recommendation system that offers the best of both worlds. ")
+       
+        st.write("### Exploratory Data Analysis EDA")
         eda_select = st.selectbox('Select a Visual to inspect', ('Rating Distribution', 'Most Common Genres', 'Movie Budget', 'Top Directors'))
         if eda_select == "Rating Distribution":
             st.image('resources/imgs/Ratings_distribution.jpg', use_column_width= True)
