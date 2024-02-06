@@ -321,19 +321,50 @@ def main():
     if page_selection == "Solution Overview":
         st.image('resources/imgs/QuantumInsights.png', width= 170)
         st.title("Solution Overview 🚧")
-        st.sidebar.markdown("Solution Overview 🚧")
-        #st.image('GreenRising.jpg', width= 250)
-        st.write("Describe your winning approach on this page")
+        st.sidebar.markdown("Solution Overview 🚧")    
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+        st.write("## Exploratory Data Analysis EDA")
         st.write("In the Content-Based Filtering approach, we analyze the content and features of movies, such as genres, actors, directors, and tags. By understanding the unique characteristics of each movie, we can recommend similar movies that match the user's preferences.")
         st.write("On the other hand, the Collaborative-Based Filtering approach leverages the wisdom of the crowd. We analyze the ratings and preferences of similar users to identify movies that align with the user's tastes. This technique allows us to uncover hidden gems that might not be obvious based on content alone.")
         st.write("By combining these two approaches, we create a hybrid recommendation system that offers the best of both worlds. This approach allows us to provide accurate recommendations that align with the user's preferences while also introducing them to new and exciting movies they might not have discovered otherwise.")
-        st.write("Furthermore, our recommendation engine continuously learns and adapts based on user feedback. As users rate and interact with movies, our system updates its recommendations to reflect their evolving preferences, ensuring that the recommendations stay relevant and personalized over time.")
-        st.write("We believe that our winning approach will transform the movie-watching experience for users, providing them with a curated list of movies that they will truly enjoy. Try our Movie Recommender Engine today and let us help you discover your next favorite movie!")
+        st.write("It is an approach to analyzing data sets to summarize their main characteristics, often with the help of statistical graphics and other data visualization methods ")
 
+        eda_select = st.selectbox('Select a Visual to inspect', ('Rating Distribution', 'Most Common Genres', 'Movie Budget', 'Top Directors'))
+        if eda_select == "Rating Distribution":
+            st.image('resources/imgs/Ratings_distribution.jpg', width= 200)
+            st.write("Here we explore and perform feature engineering on the movies ratings data. We create a dataframe to check ratings and the number of ratings a movie has and use visuals to view the distribution.\
+                    The majority of ratings in the viwer's dataset is comprised of rations around 3.0")
+            st.image('resources/imgs/Ratings_boxplot.jpg', width= 200)
+            st.write("Here we also explore the boxplot of the rating to get the Outliers within the rating of movies by users, The boxplot shows a distribution \
+                    of rating in the train dataset. with the minum being 0.5 and the maximum being 5 and the avarage being 3.53")
         
+        #Top 10 Genres
+        if eda_select == "Most Common Genres"
+            st.image('resources/imgs/Top_genres.jpg', width= 200)
+            st.write("Here we explore and built a Visual Representation of the Top Genres with the highest view by the Users, and it was noted that Drama has the highest view and ratings by the Users ")
+        
+        #Movie Budget
+        if eda_select == "Movie Budget"
+            st.image('resources/imgs/movie_budget.jpg', width= 200)
+            st.write("Here we explore the Movies based on the budgetted fee or cost of production of the movies, in no order of year of production or Casts.")
+        
+        #Movie Directors
+        if eda_select == "Top Directors"
+            st.image('resources/imgs/Director_chart.jpg', width= 200)
+            st.write("Here we have created a Pie Chart which is showing the Distribution of the Top Rated Directors, based on User Ratings and Number of Movies Directed.")
+
+        col25, col26, col27 = st.columns(3)
+
+        with col25:
+            st.image('resources/imgs/QuantumInsights.png', width= 80)
+        with col26:
+            st.write("###### Quantum Insights 🏡")
+        with col27:
+            st.write("###### Copyright © 2024")
+
+
 
     if page_selection == "Feedback":
         st.image('resources/imgs/QuantumInsights.png', width= 170)
