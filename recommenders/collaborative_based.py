@@ -41,7 +41,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 movies_df = pd.read_csv('resources/data/movies.csv',sep = ',')
 ratings_df = pd.read_csv('resources/data/ratings.csv')
 ratings_df.drop(['timestamp'], axis=1,inplace=True)
-ratings = ratings_df.merge(movies_df[["movieId", "titles"]], on="movieId")
+ratings = ratings_df.merge(movies_df[["movieId", "title"]], on="movieId")
 
 # We make use of an SVD model trained on a subset of the MovieLens 10k dataset.
 model=pickle.load(open('resources/models/SVD_model.pkl', 'rb'))
