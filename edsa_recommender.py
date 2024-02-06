@@ -333,26 +333,27 @@ def main():
 
         eda_select = st.selectbox('Select a Visual to inspect', ('Rating Distribution', 'Most Common Genres', 'Movie Budget', 'Top Directors'))
         if eda_select == "Rating Distribution":
-            st.image('resources/imgs/Ratings_distribution.jpg', width= 200)
+            st.image('resources/imgs/Ratings_distribution.jpg', use_column_width= True)
             st.write("Here we explore and perform feature engineering on the movies ratings data. We create a dataframe to check ratings and the number of ratings a movie has and use visuals to view the distribution.\
                     The majority of ratings in the viwer's dataset is comprised of rations around 3.0")
-            st.image('resources/imgs/Ratings_boxplot.jpg', width= 200)
+            st.write(" ")
+            st.image('resources/imgs/Ratings_boxlot.jpg', use_column_width= True)
             st.write("Here we also explore the boxplot of the rating to get the Outliers within the rating of movies by users, The boxplot shows a distribution \
                     of rating in the train dataset. with the minum being 0.5 and the maximum being 5 and the avarage being 3.53")
         
         #Top 10 Genres
         if eda_select == "Most Common Genres":
-            st.image('resources/imgs/Top_genres.jpg', width= 200)
+            st.image('resources/imgs/Top_genres.jpg', use_column_width= True)
             st.write("Here we explore and built a Visual Representation of the Top Genres with the highest view by the Users, and it was noted that Drama has the highest view and ratings by the Users ")
         
         #Movie Budget
         if eda_select == "Movie Budget":
-            st.image('resources/imgs/movie_budget.jpg', width= 200)
+            st.image('resources/imgs/movie_budget.jpg', use_column_width= True)
             st.write("Here we explore the Movies based on the budgetted fee or cost of production of the movies, in no order of year of production or Casts.")
         
         #Movie Directors
         if eda_select == "Top Directors":
-            st.image('resources/imgs/Director_chart.jpg', width= 200)
+            st.image('resources/imgs/Director_chart.jpg', use_column_width= True)
             st.write("Here we have created a Pie Chart which is showing the Distribution of the Top Rated Directors, based on User Ratings and Number of Movies Directed.")
 
         col25, col26, col27 = st.columns(3)
