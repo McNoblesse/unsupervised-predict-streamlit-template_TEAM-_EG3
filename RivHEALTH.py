@@ -96,7 +96,8 @@ def main():
         with col1:
             st.write("##### River health Awareness")
             st.write("Provide the public and industry player with education regarding activities that negatively affect\
-                     river thames health.")
+                     river thames health.Help water companies, farmers and the general public allocate resources effectively\
+                     by highlighting critical areas for infrastructure upgrades.")
 
         with col2:
             edu_lottie = load_lottiefile("resources/imgs/ecology.json")
@@ -107,7 +108,7 @@ def main():
         with col3:
             st.write("##### Interactive Platform")
             st.write("An platform that will collect and Analyze data from various sources to understand the overall health of rivers and pinpoint the sources of pollution.\
-                    Help water companies allocate resources effectively by highlighting critical areas for infrastructure upgrades.")
+                    This dashbord will show the chemical and biological composition of water in your area.")
 
         with col4:
             dash_lottie = load_lottiefile("resources/imgs/dashboard.json")
@@ -118,22 +119,22 @@ def main():
 
         with col5:
             st.write("##### Pollution source ")
-            st.write("➡ Efficiently manage and analyze vast datasets. Our big data solutions ensure seamless processing, \
-            storage, and retrieval of information, enabling you to make data-driven decisions at scale.")
+            st.write("To effectively pinpoint sources of pollution at various locations and  \
+                    to visually represent the river and its surroundings on a map.")
 
         with col6:
             sour_lottie = load_lottiefile("resources/imgs/point.json")
             st_lottie(sour_lottie)
 
-        col7 = st.columns(1)
+        col7, col8 = st.columns(2)
 
         st.divider()
 
-        col8, col9 = st.columns(2)
+        col9, col10 = st.columns(2)
 
-        with col8:
-            st.write("###### RivHealth 🏡")
         with col9:
+            st.write("###### RivHealth 🏡")
+        with col10:
             st.write("###### Copyright © 2024")
 
     if page_options == "About Us":
