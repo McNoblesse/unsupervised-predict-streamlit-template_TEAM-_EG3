@@ -65,7 +65,7 @@ def main():
      # DO NOT REMOVE - Sidebar animation
     with st.sidebar:
         st.write("Select an option")
-        page_options =st.radio("", ["Home", "About Us", "RivHEALTH Dash Board","Solution Overview", "Feedback"])
+        page_options =st.radio("", ["Home", "About Us", "RivHEALTH Dash Board","River Thames History", "Feedback"])
 
         lottie = load_lottiefile("resources/imgs/location.json")
         st_lottie(lottie, key='animation')
@@ -289,10 +289,8 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-    if page_options == "Solution Overview":
-        st.image('resources/imgs/QuantumInsights.png', width= 170)
-        st.write("## Solution Overview 🚧")
-        st.sidebar.markdown("Solution Overview 🚧")    
+    if page_options == "River Thames History":
+        st.write("## Solution Overview 🚧")   
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
