@@ -138,57 +138,23 @@ def main():
             st.write("###### Copyright © 2024")
 
     if page_options == "About Us":
-        st.image('resources/imgs/QuantumInsights.png', width= 170)
-        st.title("About Us 🎈")
-
-        st.divider()
-        st.write("### Company Overview")
-        st.write("Welcome to QuantumInsights – Where Data Unveils Infinite Possibilities!")
-        st.write("Founded in 2002 with a Global socio-economic perspective, tailored for the unique needs of clients \
-        and for dynamic hub of innovation, education, and entrepreneurship.  At QuantumInsights, we believe in the \
-        transformative power of data. Our journey began with a vision \
-        to redefine the landscape of data science, turning complex datasets into strategic assets for businesses across \
-        diverse industries.")
+        st.title("About Us ")
 
         st.divider()
         st.write("### Our Mission")
-        st.write("##### 🚀 Empowering Businesses through Data Excellence")
-        st.write("Our mission is to empower organizations with innovative data solutions, enabling them to navigate \
-        the digital era with confidence. We are dedicated to delivering cutting-edge data science services that drive \
-        informed decision-making, fuel innovation, and foster sustainable growth.")
+        st.write("##### Empowering the public through Data Excellence")
+        st.write(" our mission is to be the trusted source of truthful insights in the water industry.\
+                  We have observed a lack of understanding among stakeholders about river health and its impact,\
+                  including issues like sewage discharges, agricultural runoff, misconnected sewers, illegal dumping,\
+                  and industrial waste. To address this, we are developing a platform to provide a comprehensive view of\
+                  river health and identify pollution sources. Our goal is to empower stakeholders such as water companies,\
+                  river conservation trusts, environmental agencies, farmers, and local authorities around River Thames with data-backed insights for informed decision-making and policy development.")
 
-        st.divider()
-        st.write("### What Sets Us Apart")
-        st.write("##### 🌐 Innovation at the Core")
-        st.write("At Quantum Insights Labs, innovation is not just a buzzword – it's our guiding principle. Our team \
-        of seasoned data scientists, engineers, and analysts thrives on pushing the boundaries of what's possible. \
-        We continuously explore emerging technologies, ensuring our clients stay ahead in the dynamic world of data science.")
-        st.write("##### 🤝 Tailored Solutions for Your Success")
-        st.write("We understand that each business is unique, facing its own challenges and opportunities. That's why we \
-        don't believe in one-size-fits-all solutions. Our approach is collaborative, and our solutions are meticulously \
-        tailored to meet the specific needs and goals of our clients.")
-        st.write("##### 💡 Proven Expertise")
-        st.write("Our journey is marked by a track record of success. From data analytics and machine learning to big data \
-        management, we bring a wealth of expertise to every project. Explore our success stories and discover how businesses \
-        have unlocked value through our data science solutions.")
-
-        st.divider()
-        st.write("### Our Commitment")
-        st.write("##### ✨ Excellence, Integrity, Innovation")
-        st.write("➡ EExcellence: We are committed to delivering solutions of the highest quality, exceeding our clients' expectations.")
-        st.write("➡ Integrity: We operate with transparency, honesty, and the utmost respect for our clients, partners, and team members.")
-        st.write("➡ Innovation: We thrive on continuous innovation, staying at the forefront of technological advancements to bring fresh \
-        perspectives to every project.")
-
-        st.divider()
-        st.write("### Let's Shape the Future of Data Together")
-        st.write("Whether you are looking to elevate your data analytics, implement machine learning solutions, or navigate the vast world \
-        of big data, QuantumInsights is your dedicated partner. Join us on a journey where data becomes a catalyst for growth and transformation.")
-
-        st.write("##### 🚀 Explore Infinite Possibilities with QuantumInsights! 🌐")
+        st.image('resources/imgs/rivermapcropped.jpg', width= 400)
 
         st.divider()
         st.write("## Meet Our Team:")
+        st.write("##### 🌐 Innovation at the Core")
 
         with st.container():
             col20, col21, col22 = st.columns(3)
@@ -217,6 +183,16 @@ def main():
         st.write(" ")
         st.write(" ")
         st.write(" ")
+
+        st.divider()
+        st.write("### Let's Shape the Future of Data Together")
+        st.write("Whether you are looking to elevate your data analytics, implement machine learning solutions, or navigate the vast world \
+        of big data, QuantumInsights is your dedicated partner. Join us on a journey where data becomes a catalyst for growth and transformation.")
+
+        st.write("##### 🚀 Explore Infinite Possibilities with QuantumInsights! 🌐")
+
+        st.divider()
+
         col17, col18, col19 = st.columns(3)
 
         with col17:
