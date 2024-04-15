@@ -156,49 +156,58 @@ def main():
         st.write("## Meet Our Team:")
         st.write("##### 🌐 Innovation at the Core")
 
+       # Function to display oval-like square image with caption
+        def image_with_caption(image_path, caption, width=250):
+            st.markdown(
+            f"""
+            <div style="text-align:center">
+                <figure>
+                    <img src="{image_path}" style="border-radius: 20%; border: 2px solid #fff; width: {width}px;">
+                     <figcaption>{caption}</figcaption>
+                </figure>
+            </div>
+            """,
+            unsafe_allow_html=True,
+            )
+
         with st.container():
             col20, col21, col22 = st.columns(3)
 
             with col20:
-                st.image('resources/imgs/Ngokoana.png', width= 200)
+                image_with_caption('resources/imgs/fhulu.jpg', 'Fhulufhelo')
 
             with col21:
-                st.image('resources/imgs/Nina.png', width= 150)
-                    
+                image_with_caption('resources/imgs/lauryn.png', 'Lauryn')
+                
             with col22:
-                st.image('resources/imgs/Josh.png', width= 150)
+                image_with_caption('resources/imgs/lebo.png', 'Lebohang')
 
         st.write("")
         st.write("")
+
         with st.container():
-            col23, col24 = st.columns(2)
+            col23, col24, col25 = st.columns(3)
 
             with col23:
-                st.image('resources/imgs/Joseph.png', width= 150)
+                image_with_caption('resources/imgs/justice.jpeg', 'Justice')
+
+            with col24: 
+                image_with_caption('resources/imgs/omotola.jpeg', 'Omotola')
+
+            with col25:
+                image_with_caption('resources/imgs/nk.jpeg', 'Ngokoana')
                 
-           #with col5:
-                #st.image('Fabian.png', width= 200)
 
         st.write(" ")
         st.write(" ")
-        st.write(" ")
-        st.write(" ")
-
-        st.divider()
-        st.write("### Let's Shape the Future of Data Together")
-        st.write("Whether you are looking to elevate your data analytics, implement machine learning solutions, or navigate the vast world \
-        of big data, QuantumInsights is your dedicated partner. Join us on a journey where data becomes a catalyst for growth and transformation.")
-
-        st.write("##### 🚀 Explore Infinite Possibilities with QuantumInsights! 🌐")
-
+     
+       
         st.divider()
 
         col17, col18, col19 = st.columns(3)
 
         with col17:
-            st.image('resources/imgs/QuantumInsights.png', width= 80)
-        with col18:
-            st.write("###### Quantum Insights 🏡")
+            st.write("###### RivHEALTH 🏡")
         with col19:
             st.write("###### Copyright © 2024")
 
@@ -259,7 +268,7 @@ def main():
         with col17:
             st.image('resources/imgs/QuantumInsights.png', width= 80)
         with col18:
-            st.write("###### Quantum Insights 🏡")
+            st.write("###### RivHEALTH 🏡")
         with col19:
             st.write("###### Copyright © 2024")
 
@@ -310,7 +319,7 @@ def main():
         with col25:
             st.image('resources/imgs/QuantumInsights.png', width= 80)
         with col26:
-            st.write("###### Quantum Insights 🏡")
+            st.write("###### RivHEALTHs 🏡")
         with col27:
             st.write("###### Copyright © 2024")
 
@@ -339,7 +348,7 @@ def main():
         with col17:
             st.image('resources/imgs/QuantumInsights.png', width= 80)
         with col18:
-            st.write("###### Quantum Insights 🏡")
+            st.write("###### RivHEALTH 🏡")
         with col19:
             st.write("###### Copyright © 2024")
 
